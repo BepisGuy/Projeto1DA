@@ -37,7 +37,7 @@ bool Cenario1::tem_espaço(const encomenda *entrega, const carrinha *estafeta){
     return (entrega->getV_enc() <= estafeta->getVM_car()) && (entrega->getP_enc() <= estafeta->getPM_car());
 };
 
-void Cenario1::cenario1() {
+void Cenario1::cenario1(std::vector<carrinha*> estafetas,std::vector<encomenda*> entregas) {
     sort(entregas.begin(), entregas.end(), sort_entrega_VP);
     sort(estafetas.begin(), estafetas.end(), sort_carrinha_VP);
 

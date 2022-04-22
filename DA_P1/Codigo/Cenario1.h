@@ -14,7 +14,7 @@ private:
     std::vector<encomenda*> entregas;
     std::vector<carrinha*> estafetas;
 public:
-    void cenario1();
+    void cenario1(std::vector<carrinha*> estafetas,std::vector<encomenda*> entregas);
     bool sort_entrega_VP(const encomenda *a, const encomenda *b);
     bool sort_carrinha_VP(const carrinha *a, const carrinha *b);
     bool tem_espaço(const encomenda *entrega, const carrinha *estafeta);
